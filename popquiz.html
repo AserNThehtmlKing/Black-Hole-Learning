@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <!-- HTML for the quiz form -->
+<form name="quiz" id="quiz">
+    <h1>Pop Quiz</h1>
+    <p>Why are black holes black?</p>
+    <label><input type="radio" name="q1" value="a">Light cannot escape it</label><br>
+    <label><input type="radio" name="q1" value="b">It takes the color of its background</label><br>
+    <label><input type="radio" name="q1" value="c">It is just naturally black</label><br>
+    <p>How do black holes form?</p>
+    <label><input type="radio" name="q2" value="a">Black holes are formed when galaxies are formed</label><br>
+    <label><input type="radio" name="q2" value="b">When a planet dies, a black hole forms</label><br>
+    <label><input type="radio" name="q2" value="c">When a star dies, it causes a black hole</label><br>
+    <p>What is the largest black hole?</p>
+    <label><input type="radio" name="q3" value="a">Cygnus X-1</label><br>
+    <label><input type="radio" name="q3" value="b">TON-618</label><br>
+    <label><input type="radio" name="q3" value="c">Alpha Centari</label><br>
+    <button id="myButton" class="submit-btn" type="button" onclick="checkQuiz()">Submit</button>
+  </form>
+  
+  <!-- CSS for styling the quiz -->
+  <style>
+
+    body{
+        background-color:#fff;
+        font-family: 'Futura', sans-serif;
+    }
+    #quiz {
+      width: 50%;
+      margin: 0 auto;
+      border: 1px solid black;
+      padding: 20px;
+    }
+    #quiz h1 {
+      text-align: center;
+    }
+    #quiz p {
+      margin-bottom: 10px;
+    }
+
+    .submit-btn{
+    background-color: black;
+    color: mediumpurple;
+    height: 30px;
+    width: 80px;
+    border: none;
+    border-radius: 75px;
+    }
+
+    .submit-btn:hover{
+    transition: 0.5s;
+    background-color: mediumpurple;
+    border: none;
+    height: 40px;
+    width: 100px;
+    color: black;
+    border-radius: 75px;
+    cursor: pointer;
+    }
+  </style>
+  
+  <!-- JavaScript for checking and displaying the results of the quiz -->
+  <script>
+    function checkQuiz() {
+      // Initialize the number of correct answers
+      var correct = 0;
+  
+      // Check the answer to the first question
+      var q1 = document.querySelector('input[name="q1"]:checked');
+      if (q1 && q1.value === 'a') {
+        correct++;
+      }
+  
+      // Check the answer to the second question
+      var q2 = document.querySelector('input[name="q2"]:checked');
+      if (q2 && q2.value === 'c') {
+        correct++;
+      }
+  
+      // Check the answer to the third question
+      var q3 = document.querySelector('input[name="q3"]:checked');
+      if (q3 && q3.value === 'b') {   
+        correct++;
+      }
+  
+      // Display the results
+      var button = document.getElementById('myButton');
+      button.addEventListener('click', function() {
+      alert('You got ' + correct + ' out of 3 questions correct!');
+      window.location.href = 'skill.html';
+  });
+    }
+  </script> 
+
+  
+  
+    </body>
+</html>

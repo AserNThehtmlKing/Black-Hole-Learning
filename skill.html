@@ -1,0 +1,140 @@
+    <!DOCTYPE html>
+    <html>
+        <head></head>
+        <body>
+            <style>
+                body{
+        background-color:#fff;
+        font-family: 'Futura', sans-serif;
+    }
+
+    .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .logo {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    color: mediumpurple;
+    text-decoration: none;
+    padding: 15px 20px;
+    }
+
+    nav {
+    float: right;
+    }
+
+    nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+
+    nav li {
+    display: inline-block;
+    }
+
+    nav a {
+    display: block;
+    font-size: 14px;
+    color: mediumpurple;    
+    text-decoration: none;
+    padding: 15px 20px;
+    }
+
+    nav a:hover {
+    background-color: #eee;
+    }
+
+                .progress{
+                    position: relative;
+                    width: 210px;
+                    height: 30px;
+                    background-color: grey;
+                    border-radius: 5px;
+                    overflow: hidden;
+                }
+
+                .progress__fill{
+                    width: 0%;
+                    height: 100%;
+                    background-color: mediumpurple;
+                }
+
+                .progress__text{
+                    position: absolute;
+                    top: 50%;
+                    right: 5px;
+                    transform: translateY(-50%);
+                }
+
+
+    .account-btn{
+    background-color: black;
+    color: mediumpurple;
+    height: 30px;
+    width: 80px;
+    border: none;
+    border-radius: 75px;
+    }
+
+    .account-btn:hover{
+    transition: 0.5s;
+    background-color: mediumpurple;
+    border: none;
+    height: 40px;
+    width: 100px;
+    color: black;
+    border-radius: 75px;
+    cursor: pointer;
+    }
+
+    .start-lesson-btn{
+        background-color: black;
+        color: mediumpurple;
+        height: 30px;
+        width: 95px;
+        border: none;
+        border-radius: 75px;
+    }
+
+    .start-lesson-btn:hover{
+    transition: 0.5s;
+    background-color: mediumpurple;
+    border: none;
+    height: 40px;
+    width: 100px;
+    color: black;
+    border-radius: 75px;
+    cursor: pointer;
+
+    }
+            </style>
+            <div class="header">
+                <a href="#" class="logo">Black Hole Learning</a>
+                <nav>
+                <ul>
+                    <li><a href=""><button class="account-btn">Log In</button></a></li>
+                    <li><a href="signup.html"><button class="account-btn">Sign Up</button></a></li>
+                    <li><a href="aser.html">Home</a></li>
+                    <li><a href="skill.html">Learning</a></li>
+                    <li><a href="formc.html">Contact</a></li>
+                </ul>
+                </nav>
+            </div>
+            <br><br><br>  
+            <h1>My Progress</h1>
+            <h3>My Space Journey</h3>
+            <div class="progress">
+                <div class="progress__fill"></div>
+                <span class="progress__text">0%</span>
+            </div>
+            <br><br><br><br><br>
+            <a href="article1.html"><button class="start-lesson-btn">Start Lesson</button></a>
+        </body>
+        </html>

@@ -1,0 +1,132 @@
+body{
+    background-color:#fff;
+    font-family: 'Futura', sans-serif;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  color: mediumpurple;
+  text-decoration: none;
+  padding: 15px 20px;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  display: block;
+  font-size: 14px;
+  color: mediumpurple;
+  text-decoration: none;
+  padding: 15px 20px;
+}
+
+nav a:hover {
+  background-color: #eee;
+}
+
+
+  .bg-image {
+    background-image: url('hole.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    color: mediumpurple;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+
+h1{
+  display: block;
+}
+
+.get-started{
+  background-color: black;
+  border: none;
+  height: 40px;
+  width: 100px;
+  color: mediumpurple;
+  border-radius: 75px;
+}
+
+.get-started:hover{
+  transition: 0.5s;
+  background-color: mediumpurple;
+  border: none;
+  height: 50px;
+  width: 120px;
+  color: black;
+  border-radius: 75px;
+  cursor: pointer;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  color: #fff;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+h2 {
+  margin-left: 20px;
+  font-size: 24px;
+  color: #fff;
+}
+
+p {
+  margin-left: 20px;
+  font-size: 18px;
+  color: #fff;
+}
+
+
+.account-btn{
+  background-color: black;
+  color: mediumpurple;
+  height: 30px;
+  width: 80px;
+  border: none;
+  border-radius: 75px;
+}
+
+.account-btn:hover{
+  transition: 0.5s;
+  background-color: mediumpurple;
+  border: none;
+  height: 40px;
+  width: 100px;
+  color: black;
+  border-radius: 75px;
+  cursor: pointer;
+}
